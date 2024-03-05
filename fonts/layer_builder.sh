@@ -16,6 +16,7 @@ mkdir /opt/fonts
 # dnf download urw-base35-nimbus-roman-fonts
 # find /tmp/*/usr/share/fonts -name '*.afm' -delete -o -name '*.t1' -delete
 cp -P -r /tmp/*/usr/share/fonts/* /opt/fonts
+cp -r /out/gilroy /opt/fonts/
 
 cat > /opt/fonts/fonts.conf <<EOF
 <?xml version="1.0" ?>
